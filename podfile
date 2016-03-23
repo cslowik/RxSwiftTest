@@ -1,7 +1,7 @@
 platform :ios, '8.0'
 use_frameworks!
 
-target 'RxSwiftExample' do
+target 'RxSwiftTest' do
 
 pod "RxSwift"
 pod "RxCocoa"
