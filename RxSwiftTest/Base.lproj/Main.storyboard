@@ -8,7 +8,7 @@
         <!--City Search-->
         <scene sceneID="28A-b6-oq4">
             <objects>
-                <viewController id="w2T-QN-Eh3" sceneMemberID="viewController">
+                <viewController id="w2T-QN-Eh3" customClass="ViewController" customModule="RxSwiftTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9oE-20-SX1"/>
                         <viewControllerLayoutGuide type="bottom" id="S5Q-vz-3tI"/>
@@ -48,6 +48,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="City Search" id="dOr-aD-jAb"/>
+                    <connections>
+                        <outlet property="searchBar" destination="fp0-Fs-QJY" id="Aav-3E-y97"/>
+                        <outlet property="tableView" destination="XB6-fm-uje" id="Xt0-yJ-hFt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3rX-b4-c8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

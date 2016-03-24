@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    //MARK:- Properties
+    // Views
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    // Data
+    var shownCities = [String]()
+    let allCities = ["New York", "Chicago", "Boston", "Los Angeles", "Sacramento", "Cleveland"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
