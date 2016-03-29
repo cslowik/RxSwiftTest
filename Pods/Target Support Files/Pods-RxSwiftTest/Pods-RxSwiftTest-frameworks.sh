@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-RxSwiftTest/ChameleonFramework.framework"
   install_framework "Pods-RxSwiftTest/RxCocoa.framework"
   install_framework "Pods-RxSwiftTest/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-RxSwiftTest/ChameleonFramework.framework"
   install_framework "Pods-RxSwiftTest/RxCocoa.framework"
   install_framework "Pods-RxSwiftTest/RxSwift.framework"
 fi
